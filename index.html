@@ -4,6 +4,7 @@
     <title>Brightness Control</title>
     <script type="text/javascript">
         function setBrightness(value) {
+            alert('ボタンが押されました　value:' + value);
             // AndroidのJavascriptInterfaceのメソッドを呼び出す
             if (androidInterface.brightness) {
                 androidInterface.brightness.brightness(value);
