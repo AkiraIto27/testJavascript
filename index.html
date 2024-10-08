@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brightness Control</title>
+    <script type="text/javascript">
+        function setBrightness(value) {
+            // AndroidのJavascriptInterfaceのメソッドを呼び出す
+            if (window.brightness) {
+                window.brightness.brightness(value);
+            } else {
+                alert('JavascriptInterfaceが利用できません');
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="setBrightness(1)">明るさ最大</button>
+    <button onclick="setBrightness(0)">明るさ最低</button>
+</body>
+</html>
